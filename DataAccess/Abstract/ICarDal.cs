@@ -5,15 +5,11 @@ using System.Text;
 
 namespace DataAccess.Abstract
 {
-    public interface ICarDal
+    public interface ICarDal : IEntityRepository<Car>
     //Car ile ilgili veritabanında yapacağım operasyonları içeren interface.
     {
 
-        List<Car> GetAll();
-        void Add(Car car);
-        void UpDate(Car car);
-        void Delete(Car car);
-
-        List<Car> GetById(int Id);
+       
+       
     }
 }
